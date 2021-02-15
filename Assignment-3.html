@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vishal's Assignments</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+    
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link"><span><b>Home</b></span></a></li>
+	        </ul>
+	      </div>
+
+	    </div>
+	  </nav>
+
+	 
+            <h1 class="mb-3 bread">Assignment-3: Programming using Phython and C</h1>
+            
+                    <section class="ftco-section">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-12 ftco-animate">
+                      <h2>Brief</h2>
+                      <p> learnt about the different elements and aspects of programming in these languages <br>
+                      <h4>Write a program to take two integers "a" and "b" as inputs from the user and print their sum.</h4>
+                      <h4>Write a program to take an integer "n" as input and print if it is "odd" or "even". </h4>
+                      <h4>Write a program to take an integer "n" as input from the user and print its factorial.</h4>
+                      <h2>Learning</h2>
+                      <h4>●Header files include the standard function declaration and definition like printf, scanf etc.</h4>
+                      <h4>●Different ways to read the input from user and display output to user.</h4>
+                      <h4>●Using mathematical operations of set of numbers.</h4>
+                      <h4>●Tackling syntax and logical errors.</h4>
+ <br> 
+                      <h2>C- Programming</h2>
+                       
+              
+                <h3>Program-1</h3>
+                <p> 1.Write a program to take two integers "num1" and "num2" as inputs from the user and print their sum. <br>
+                <div style="overflow: auto; width:700px; height:200px;">
+                <p><h6>
+                <pre><code>
+                  #include <stdio.h> //header file for standard input output operations
+                   //main program starts
+
+int main()
+{
+    int a,b;                                           //define the variables for getting data from user
+    printf("Enter the first number:");                 //%d represents integer data type as input
+    scanf("%d", &a);
+    printf("\nEnter the second number:");
+    scanf("%d", &b);                                  //& is for referencing the memory of the variables
+    printf("\nThe sum of %d and %d is %d",a,b,a+b);
+
+
+    return 0;
+}
+
+                </pre></code> 
+                </h6>
+                </div> 
+                </div>   
+                <img src="images/c-1.png" width="1080" height="600">
+
+
+                <h3>Program-2</h3>
+                <p> 2.Write a program to take an integer "n" as input and print if it is "odd" or "even". <br>
+                <div style="overflow: auto; width:700px; height:200px;">
+                <p><h6>
+                <pre><code>
+#include <stdio.h> //header file for standard input output operations
+                   //main program starts
+
+int main()
+{
+    int n;
+    printf("Enter the number you want to check as odd or even:");
+    scanf("%d", &n);                                              //getting data from user
+
+    if(n%2==0)
+    printf("\nThe number is even");                               //checking the 'modulus' with 2
+
+    else
+    printf("\nThe number is odd");                                //if it isn't even, its odd
+
+    return 0;
+
+}
+                </pre></code> 
+                </h6>
+                </p>
+                </div> 
+                <img src="images/c-2.png" width="1080" height="600">
+
+                <h3>Program-3</h3>
+                <p> 3.Write a program to take an integer "n" as input from the user and print its factorial. <br>
+                <div style="overflow: auto; width:700px; height:200px;">
+                <p><h6>
+                <pre><code>
+#include <stdio.h> //header file for standard input output operations
+                   //main program starts
+
+int main()
+{
+    int n,i;        //n for the number, i for the index in for loop
+    int fact=1;     // by default factorial values are multipled, hence value is defined as 1
+    printf("\t***PROGRAM TO FIND FACTORIAL***\n");
+    printf("Enter the number you want to find out factrorial for: ");
+    scanf("%d",&n);
+
+     //for loop begins
+
+    for(i=1;i<=n;i++) {
+
+        fact*=i;
+    }
+
+    printf("The factorial of %d is %d",n,fact);
+    return 0;
+
+}
+
+                </pre></code> 
+                </h6>
+                </p>
+                </div> 
+                <img src="images/c-3.png" width="1080" height="600">
+
+                <h2>Python- Programming</h2>
+                       
+              
+                <h3>Program-1</h3>
+                <p> 1.Write a program to take two integers "num1" and "num2" as inputs from the user and print their sum. <br>
+                <div style="overflow: auto; width:700px; height:200px;">
+                <p><h6>
+                <pre><code>
+                  #include
+#Input numbers
+num1 = int(input('Enter first number: '))
+num2 = int(input('Enter second number: '))
+# Add two numbers
+sum = num1 + num2
+# Display the sum
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+                </pre></code> 
+                </h6>
+                </div> 
+                <img src="images/python-1.png" width="1080" height="600">
+
+
+                <h3>Program-2</h3>
+                <p> 2.Write a program to take an integer "n" as input and print if it is "odd" or "even". <br>
+                <div style="overflow: auto; width:700px; height:200px;">
+                <p><h6>
+                <pre><code>
+#include
+num = int(input("Enter a number: "))
+mod = num % 2
+if mod > 0:
+print("This is an odd number.")
+else:
+print("This is an even number.")
+                </pre></code> 
+                </h6>
+                </p>
+                </div> 
+                <img src="images/python-2.png" width="1080" height="600">
+
+                <h3>Program-3</h3>
+                <p> 3.Write a program to take an integer "n" as input from the user and print its factorial. <br>
+                <div style="overflow: auto; width:700px; height:200px;">
+                <p><h6>
+                <pre><code>
+#include
+Python program to find the factorial of a number using recursion
+def recur_factorial(n):
+"""Function to return the factorial of a number using recursion"""
+if n == 1:
+return n
+else:
+return n*recur_factorial(n-1)
+# Change this value for a different result
+num = 7
+# uncomment to take input from the user
+#num = int(input("Enter a number: "))
+# check is the number is negative
+if num < 0:
+print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+print("The factorial of 0 is 1")
+else:
+print("The factorial of",num,"is",recur_factorial(num))
+                </pre></code> 
+                </h6>
+                </p>
+                </div> 
+                <img src="images/python-3.png" width="1080" height="600">
+                </div>
+        </div>
+      </div>
+    </section> 
+
+          
+
+  </body>
+</html>
